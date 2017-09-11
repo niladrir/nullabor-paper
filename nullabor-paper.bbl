@@ -1,0 +1,34 @@
+\begin{thebibliography}{3}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Buja \emph{et~al.}(2009)Buja, Cook, Hofmann, Lawrence, Lee, Swayne,
+  and Wickham}]{buja:2009}
+Buja A, Cook D, Hofmann H, Lawrence M, Lee E, Swayne D, Wickham H (2009).
+\newblock \enquote{{S}tatistical {I}nference for {E}xploratory {D}ata
+  {A}nalysis and {M}odel {D}iagnostics.}
+\newblock \emph{Royal Society Philosophical Transactions A},
+  \textbf{367}(1906), 4361--4383.
+
+\bibitem[{Hofmann \emph{et~al.}(2013)Hofmann, Majumder, and
+  Cook}]{majumder:2013}
+Hofmann H, Majumder M, Cook D (2013).
+\newblock \emph{Experiments for Visual Inference}.
+\newblock \url{http://www.public.iastate.edu/~hofmann/experiments.html},
+  Accessed: 2015-08-31.
+
+\bibitem[{Wickham \emph{et~al.}(2010)Wickham, Cook, Hofmann, and
+  Buja}]{hadley:2010}
+Wickham H, Cook D, Hofmann H, Buja A (2010).
+\newblock \enquote{{G}raphical {I}nference for {I}nfovis.}
+\newblock \emph{IEEE Transactions on Visualization and Computer Graphics},
+  \textbf{16}.
+
+\end{thebibliography}
