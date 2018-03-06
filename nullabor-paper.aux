@@ -1,6 +1,5 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
-\bibstyle{jss}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
 \global\let\oldcontentsline\contentsline
@@ -17,6 +16,7 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\bibstyle{abbrvnat}
 \citation{buja:2009}
 \citation{hadley:2010}
 \citation{majumder:2013}
@@ -24,42 +24,74 @@
 \citation{majumder:2013}
 \citation{buja:2009}
 \citation{hadley:2010}
-\newlabel{introduction}{{1}{1}{}{section.1}{}}
-\newlabel{null-gen}{{2}{2}{}{section.2}{}}
-\newlabel{generate-null-data-with-a-specific-distribution}{{2.1}{2}{}{subsection.2.1}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}NULLABOR: AN R PACKAGE FOR VISUAL STATISTICAL INFERENCE}{1}{section*.1}}
+\@writefile{brf}{\backcite{buja:2009}{{1}{2}{chapter.2}}}
+\@writefile{brf}{\backcite{hadley:2010}{{1}{2}{chapter.2}}}
+\@writefile{brf}{\backcite{majumder:2013}{{1}{2}{chapter.2}}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Introduction}{1}{section.2.1}}
+\newlabel{introduction}{{2.1}{1}{Introduction}{section.2.1}{}}
+\@writefile{brf}{\backcite{buja:2009}{{1}{2.1}{section.2.1}}}
+\@writefile{brf}{\backcite{majumder:2013}{{1}{2.1}{section.2.1}}}
+\@writefile{brf}{\backcite{buja:2009}{{1}{2.1}{section.2.1}}}
+\@writefile{brf}{\backcite{hadley:2010}{{1}{2.1}{section.2.1}}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Null generating mechanisms}{1}{section.2.2}}
+\newlabel{null-gen}{{2.2}{1}{Null generating mechanisms}{section.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Generate null data with a specific distribution}{1}{subsection.2.2.1}}
+\newlabel{generate-null-data-with-a-specific-distribution}{{2.2.1}{1}{Generate null data with a specific distribution}{subsection.2.2.1}{}}
 \citation{buja:2009}
-\newlabel{generate-null-data-by-permuting-a-variable}{{2.2}{3}{}{subsection.2.2}{}}
-\newlabel{generate-null-data-with-null-residuals-from-a-model}{{2.3}{3}{}{subsection.2.3}{}}
-\newlabel{protocols}{{3}{3}{}{section.3}{}}
-\newlabel{the-lineup-protocol}{{3.1}{4}{}{subsection.3.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces A typical lineup. The plot of the actual data is embedded in a set of null plots which are generated assuming that the null hypothesis is true. The variable ``mpg'' is permuted 19 times to obtain the 19 null plots. Can you identify the plot which has the steepest slope? The true position of the plot can be obtain by copying and pasting ``decrypt(...)'' from the output into R console.}}{5}{figure.1}}
-\newlabel{lineup-ex}{{1}{5}{A typical lineup. The plot of the actual data is embedded in a set of null plots which are generated assuming that the null hypothesis is true. The variable ``mpg'' is permuted 19 times to obtain the 19 null plots. Can you identify the plot which has the steepest slope? The true position of the plot can be obtain by copying and pasting ``decrypt(...)'' from the output into R console}{figure.1}{}}
-\newlabel{the-rorschach-protocol}{{3.2}{5}{}{subsection.3.2}{}}
-\newlabel{distance-metrics}{{4}{6}{}{section.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Illustration of the Rorschach protocol. These nine scatterplots are obtained by permuting the variable ``mpg'' while keeping the variable ``wt'' fixed. Does it look like the strength of the relationship is same in all the plots? Is there a plot which has more interesting pattern than others? }}{7}{figure.2}}
-\newlabel{rorschach}{{2}{7}{Illustration of the Rorschach protocol. These nine scatterplots are obtained by permuting the variable ``mpg'' while keeping the variable ``wt'' fixed. Does it look like the strength of the relationship is same in all the plots? Is there a plot which has more interesting pattern than others?}{figure.2}{}}
-\newlabel{distance-for-univariate-data}{{4.1}{8}{}{subsection.4.1}{}}
-\newlabel{distance-based-on-regression-parameters}{{4.2}{8}{}{subsection.4.2}{}}
-\newlabel{distance-based-on-boxplots}{{4.3}{8}{}{subsection.4.3}{}}
-\newlabel{distance-based-on-separation}{{4.4}{8}{}{subsection.4.4}{}}
-\newlabel{binned-distance}{{4.5}{9}{}{subsection.4.5}{}}
-\newlabel{calculating-the-mean-distances-for-the-plots-in-the-lineup}{{5.1}{9}{}{subsection.5.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Lineup plot of size $m = 20$ of scatterplots between ``mpg'' and ``wt'' with a regression line overlaid. The plot of the actual data is randomly placed among the set of null plots. The position of the plot of the actual data is 10. }}{10}{figure.3}}
-\newlabel{lineup-reg}{{3}{10}{Lineup plot of size $m = 20$ of scatterplots between ``mpg'' and ``wt'' with a regression line overlaid. The plot of the actual data is randomly placed among the set of null plots. The position of the plot of the actual data is 10}{figure.3}{}}
-\newlabel{calculating-difference-measure-for-lineups}{{5.2}{11}{}{subsection.5.2}{}}
-\newlabel{select-bins}{{6}{11}{}{section.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Illustration of the optimum bin selection procedure. The obtained lineup data from subsection \ref  {calculating-the-mean-distances-for-the-plots-in-the-lineup} is used to generate difference between the true plot and the maximum of the null plots using a binned distance for all combinations of number of bins on both x and y axes. The number of bins on x and y axes are plotted on x and y respectively with the colors showing the differences. The darker color represents larger difference. }}{12}{figure.4}}
-\newlabel{opt-bin}{{4}{12}{Illustration of the optimum bin selection procedure. The obtained lineup data from subsection \ref {calculating-the-mean-distances-for-the-plots-in-the-lineup} is used to generate difference between the true plot and the maximum of the null plots using a binned distance for all combinations of number of bins on both x and y axes. The number of bins on x and y axes are plotted on x and y respectively with the colors showing the differences. The darker color represents larger difference}{figure.4}{}}
-\newlabel{distr}{{7}{12}{}{section.7}{}}
-\newlabel{distribution-of-distance-metrics}{{7.1}{13}{}{subsection.7.1}{}}
-\newlabel{plotting-the-empirical-distribution-of-the-distance-metric}{{7.2}{14}{}{subsection.7.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Distribution of the \textbf  {regression based distance} with the distance for the null plots of the lineup represented in black and the distance for the plot of the actual data represented by orange. The distance for the actual plot is much higher than the null plots and the actual plot can be easily identified as seen in Figure \ref  {lineup-reg}. }}{15}{figure.5}}
-\newlabel{dist-reg}{{5}{15}{Distribution of the \textbf {regression based distance} with the distance for the null plots of the lineup represented in black and the distance for the plot of the actual data represented by orange. The distance for the actual plot is much higher than the null plots and the actual plot can be easily identified as seen in Figure \ref {lineup-reg}}{figure.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Distribution of the \textbf  {binned distance} with the distance for the null plots of the lineup represented in black and the distance for the plot of the actual data represented by orange. The number of bins used is 6 on both axes. The distance for the actual plot falls within the distances for the null plots. This shows that the lineup is difficult in the sense that the actual cannot be easily identified. Hence the selection of the number of bins is important for binned distance. }}{16}{figure.6}}
-\newlabel{dist-bin-1}{{6}{16}{Distribution of the \textbf {binned distance} with the distance for the null plots of the lineup represented in black and the distance for the plot of the actual data represented by orange. The number of bins used is 6 on both axes. The distance for the actual plot falls within the distances for the null plots. This shows that the lineup is difficult in the sense that the actual cannot be easily identified. Hence the selection of the number of bins is important for binned distance}{figure.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Generate null data by permuting a variable}{2}{subsection.2.2.2}}
+\newlabel{generate-null-data-by-permuting-a-variable}{{2.2.2}{2}{Generate null data by permuting a variable}{subsection.2.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Generate null data with null residuals from a model}{2}{subsection.2.2.3}}
+\newlabel{generate-null-data-with-null-residuals-from-a-model}{{2.2.3}{2}{Generate null data with null residuals from a model}{subsection.2.2.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Protocols}{2}{section.2.3}}
+\newlabel{protocols}{{2.3}{2}{Protocols}{section.2.3}{}}
+\@writefile{brf}{\backcite{buja:2009}{{2}{2.3}{section.2.3}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}The lineup protocol}{3}{subsection.2.3.1}}
+\newlabel{the-lineup-protocol}{{2.3.1}{3}{The lineup protocol}{subsection.2.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}The Rorschach protocol}{3}{subsection.2.3.2}}
+\newlabel{the-rorschach-protocol}{{2.3.2}{3}{The Rorschach protocol}{subsection.2.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces A typical lineup. The plot of the actual data is embedded in a set of null plots which are generated assuming that the null hypothesis is true. The variable ``mpg'' is permuted 19 times to obtain the 19 null plots. Can you identify the plot which has the steepest slope? The true position of the plot can be obtain by copying and pasting ``decrypt(...)'' from the output into R console.\relax }}{4}{figure.caption.2}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{lineup-ex}{{1}{4}{A typical lineup. The plot of the actual data is embedded in a set of null plots which are generated assuming that the null hypothesis is true. The variable ``mpg'' is permuted 19 times to obtain the 19 null plots. Can you identify the plot which has the steepest slope? The true position of the plot can be obtain by copying and pasting ``decrypt(...)'' from the output into R console.\relax }{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Distance metrics}{5}{section.2.4}}
+\newlabel{distance-metrics}{{2.4}{5}{Distance metrics}{section.2.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Distance for univariate data}{5}{subsection.2.4.1}}
+\newlabel{distance-for-univariate-data}{{2.4.1}{5}{Distance for univariate data}{subsection.2.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Distance based on regression parameters}{5}{subsection.2.4.2}}
+\newlabel{distance-based-on-regression-parameters}{{2.4.2}{5}{Distance based on regression parameters}{subsection.2.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Illustration of the Rorschach protocol. These nine scatterplots are obtained by permuting the variable ``mpg'' while keeping the variable ``wt'' fixed. Does it look like the strength of the relationship is same in all the plots? Is there a plot which has more interesting pattern than others? \relax }}{6}{figure.caption.3}}
+\newlabel{rorschach}{{2}{6}{Illustration of the Rorschach protocol. These nine scatterplots are obtained by permuting the variable ``mpg'' while keeping the variable ``wt'' fixed. Does it look like the strength of the relationship is same in all the plots? Is there a plot which has more interesting pattern than others? \relax }{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Distance based on boxplots}{7}{subsection.2.4.3}}
+\newlabel{distance-based-on-boxplots}{{2.4.3}{7}{Distance based on boxplots}{subsection.2.4.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.4}Distance based on separation}{7}{subsection.2.4.4}}
+\newlabel{distance-based-on-separation}{{2.4.4}{7}{Distance based on separation}{subsection.2.4.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.5}Binned Distance}{7}{subsection.2.4.5}}
+\newlabel{binned-distance}{{2.4.5}{7}{Binned Distance}{subsection.2.4.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Calculation of mean distances and difference}{7}{section.2.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Calculating the mean distances for the plots in the lineup}{7}{subsection.2.5.1}}
+\newlabel{calculating-the-mean-distances-for-the-plots-in-the-lineup}{{2.5.1}{7}{Calculating the mean distances for the plots in the lineup}{subsection.2.5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Lineup plot of size $m = 20$ of scatterplots between ``mpg'' and ``wt'' with a regression line overlaid. The plot of the actual data is randomly placed among the set of null plots. The position of the plot of the actual data is 10. \relax }}{8}{figure.caption.4}}
+\newlabel{lineup-reg}{{3}{8}{Lineup plot of size $m = 20$ of scatterplots between ``mpg'' and ``wt'' with a regression line overlaid. The plot of the actual data is randomly placed among the set of null plots. The position of the plot of the actual data is 10. \relax }{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Calculating difference measure for lineups}{9}{subsection.2.5.2}}
+\newlabel{calculating-difference-measure-for-lineups}{{2.5.2}{9}{Calculating difference measure for lineups}{subsection.2.5.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Selection of bins}{9}{section.2.6}}
+\newlabel{select-bins}{{2.6}{9}{Selection of bins}{section.2.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Illustration of the optimum bin selection procedure. The obtained lineup data from subsection \ref  {calculating-the-mean-distances-for-the-plots-in-the-lineup} is used to generate difference between the true plot and the maximum of the null plots using a binned distance for all combinations of number of bins on both x and y axes. The number of bins on x and y axes are plotted on x and y respectively with the colors showing the differences. The darker color represents larger difference. \relax }}{10}{figure.caption.5}}
+\newlabel{opt-bin}{{4}{10}{Illustration of the optimum bin selection procedure. The obtained lineup data from subsection \ref {calculating-the-mean-distances-for-the-plots-in-the-lineup} is used to generate difference between the true plot and the maximum of the null plots using a binned distance for all combinations of number of bins on both x and y axes. The number of bins on x and y axes are plotted on x and y respectively with the colors showing the differences. The darker color represents larger difference. \relax }{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.7}Distribution of distance metrics}{10}{section.2.7}}
+\newlabel{distr}{{2.7}{10}{Distribution of distance metrics}{section.2.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.7.1}Empirical distribution of distance metrics}{10}{subsection.2.7.1}}
+\newlabel{distribution-of-distance-metrics}{{2.7.1}{10}{Empirical distribution of distance metrics}{subsection.2.7.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.7.2}Plotting the empirical distribution of the distance metric}{11}{subsection.2.7.2}}
+\newlabel{plotting-the-empirical-distribution-of-the-distance-metric}{{2.7.2}{11}{Plotting the empirical distribution of the distance metric}{subsection.2.7.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Distribution of the \textbf  {regression based distance} with the distance for the null plots of the lineup represented in black and the distance for the plot of the actual data represented by orange. The distance for the actual plot is much higher than the null plots and the actual plot can be easily identified as seen in Figure \ref  {lineup-reg}. \relax }}{12}{figure.caption.6}}
+\newlabel{dist-reg}{{5}{12}{Distribution of the \textbf {regression based distance} with the distance for the null plots of the lineup represented in black and the distance for the plot of the actual data represented by orange. The distance for the actual plot is much higher than the null plots and the actual plot can be easily identified as seen in Figure \ref {lineup-reg}. \relax }{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Distribution of the \textbf  {binned distance} with the distance for the null plots of the lineup represented in black and the distance for the plot of the actual data represented by orange. The number of bins used is 6 on both axes. The distance for the actual plot falls within the distances for the null plots. This shows that the lineup is difficult in the sense that the actual cannot be easily identified. Hence the selection of the number of bins is important for binned distance. \relax }}{13}{figure.caption.7}}
+\newlabel{dist-bin-1}{{6}{13}{Distribution of the \textbf {binned distance} with the distance for the null plots of the lineup represented in black and the distance for the plot of the actual data represented by orange. The number of bins used is 6 on both axes. The distance for the actual plot falls within the distances for the null plots. This shows that the lineup is difficult in the sense that the actual cannot be easily identified. Hence the selection of the number of bins is important for binned distance. \relax }{figure.caption.7}{}}
 \bibdata{references}
 \bibcite{buja:2009}{{1}{2009}{{Buja \emph  {et~al.}}}{{Buja, Cook, Hofmann, Lawrence, Lee, Swayne, and Wickham}}}
 \bibcite{majumder:2013}{{2}{2013}{{Hofmann \emph  {et~al.}}}{{Hofmann, Majumder, and Cook}}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Distribution of the \textbf  {binned distance} with the distance for the null plots of the lineup represented in black and the distance for the plot of the actual data represented by orange. The number of bins used is 3 on x-axis and 2 on y-axis. The number of bins are selected by the optimal bin selection method using Figure \ref  {opt-bin}. The distance for the actual plot is larger than the distances for the null plots which matches the lineup.}}{17}{figure.7}}
-\newlabel{dist-bin-2}{{7}{17}{Distribution of the \textbf {binned distance} with the distance for the null plots of the lineup represented in black and the distance for the plot of the actual data represented by orange. The number of bins used is 3 on x-axis and 2 on y-axis. The number of bins are selected by the optimal bin selection method using Figure \ref {opt-bin}. The distance for the actual plot is larger than the distances for the null plots which matches the lineup}{figure.7}{}}
 \bibcite{hadley:2010}{{3}{2010}{{Wickham \emph  {et~al.}}}{{Wickham, Cook, Hofmann, and Buja}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Distribution of the \textbf  {binned distance} with the distance for the null plots of the lineup represented in black and the distance for the plot of the actual data represented by orange. The number of bins used is 3 on x-axis and 2 on y-axis. The number of bins are selected by the optimal bin selection method using Figure \ref  {opt-bin}. The distance for the actual plot is larger than the distances for the null plots which matches the lineup.\relax }}{14}{figure.caption.8}}
+\newlabel{dist-bin-2}{{7}{14}{Distribution of the \textbf {binned distance} with the distance for the null plots of the lineup represented in black and the distance for the plot of the actual data represented by orange. The number of bins used is 3 on x-axis and 2 on y-axis. The number of bins are selected by the optimal bin selection method using Figure \ref {opt-bin}. The distance for the actual plot is larger than the distances for the null plots which matches the lineup.\relax }{figure.caption.8}{}}
+\ttl@finishall
